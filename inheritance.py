@@ -14,7 +14,7 @@ class ContractEmployee(Employee):
         self.hour = workHour
         super().__init__(name, id)
     def calculate_salary(self):
-        return self.perHour*self.hour
+        return self.rate*self.hour
 P_employee = PermanentEmployee("Enamul","1946",12000)
 print(P_employee.calculate_salary())
 
